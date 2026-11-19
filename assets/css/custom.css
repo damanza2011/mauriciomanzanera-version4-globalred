@@ -1,0 +1,295 @@
+/* ==========================================================================
+   MAURICIO MANZANERA - RED GLOBAL CONSULTORÍAS "MUNDO MEJOR"
+   VERSIÓN 4: GLOBAL RED SAS CORPORATE HIGH-CONTRAST EDITION
+   ========================================================================== */
+
+:root {
+  --bg-corporate-deep: #060913;
+  --bg-corporate-card: #0c1222;
+  --bg-corporate-surface: #111827;
+  --bg-corporate-light: #ffffff;
+
+  --color-primary-blue: #2563eb;
+  --color-hover-blue: #1d4ed8;
+  --color-sky: #38bdf8;
+  --color-emerald: #10b981;
+  --color-magenta: #d946ef;
+
+  --text-pure-white: #ffffff;
+  --text-slate-light: #e2e8f0;
+  --text-slate-muted: #94a3b8;
+  --text-slate-dark: #0f172a;
+
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.25);
+
+  --font-corporate: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base */
+body {
+  background-color: var(--bg-corporate-deep);
+  color: var(--text-slate-light);
+  font-family: var(--font-corporate);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  color: var(--text-pure-white);
+  letter-spacing: -0.02em;
+}
+
+/* Corporate Buttons (Version 2 Style + High Contrast) */
+.btn-corp-white {
+  background-color: #ffffff;
+  color: #060913 !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 0.85rem 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+.btn-corp-white:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px 0 rgba(255, 255, 255, 0.25);
+  color: #000000 !important;
+}
+
+.btn-corp-blue {
+  background-color: var(--color-primary-blue);
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 9999px;
+  padding: 0.85rem 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
+  text-decoration: none;
+}
+.btn-corp-blue:hover {
+  background-color: var(--color-hover-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(37, 99, 235, 0.5);
+  color: #ffffff !important;
+}
+
+.btn-corp-outline {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff !important;
+  border: 1px solid var(--border-strong);
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.85rem 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.btn-corp-outline:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* High Contrast Social Badges (Inconfundibles y 100% legibles) */
+.social-badge-linkedin {
+  background: #0a66c2;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(10, 102, 194, 0.3);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.social-badge-linkedin:hover {
+  background: #084e96;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.5);
+}
+
+.social-badge-facebook {
+  background: #1877f2;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(24, 119, 242, 0.3);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.social-badge-facebook:hover {
+  background: #145dbf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.5);
+}
+
+.social-badge-instagram {
+  background: linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(253, 29, 29, 0.3);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.social-badge-instagram:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(253, 29, 29, 0.5);
+}
+
+.social-badge-youtube {
+  background: #ff0000;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.social-badge-youtube:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+}
+
+/* Global Red Style Stat Cards */
+.stat-card-corporate {
+  background: var(--bg-corporate-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.stat-card-corporate:hover {
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.2);
+  transform: translateY(-3px);
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.whatsapp-float-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+  color: #ffffff;
+}
+
+.whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  border: 2px solid #25d366;
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.25); opacity: 0; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+/* Chatbot Floating Trigger */
+.chatbot-float-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+}
+
+/* Language selector active state */
+.lang-btn {
+  transition: all 0.2s ease;
+}
+.lang-btn.active {
+  background: #ffffff;
+  color: #060913 !important;
+  font-weight: 700;
+}
+
+/* Modal Backdrops */
+.modal-overlay {
+  background: rgba(6, 9, 19, 0.88);
+  backdrop-filter: blur(14px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-corporate-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+[dir="rtl"] .whatsapp-float-btn {
+  left: auto;
+  right: 24px;
+}
+[dir="rtl"] .chatbot-float-btn {
+  right: auto;
+  left: 24px;
+}
